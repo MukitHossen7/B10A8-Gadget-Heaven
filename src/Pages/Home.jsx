@@ -10,10 +10,17 @@ const Home = () => {
   const { category } = useParams();
   const products = useContext(ProductsData);
   useEffect(() => {
-    const filterData = products
-      ? products.filter((product) => product.category === category)
-      : [];
-    setCategoryProduct(filterData);
+    if (products) {
+      if (category) {
+        const filterData = products.filter(
+          (product) => product.category === category
+        );
+
+        setCategoryProduct(filterData);
+      } else {
+        setCategoryProduct(products.slice(0, 9));
+      }
+    }
   }, [products, category]);
   console.log(categoryProduct);
 
