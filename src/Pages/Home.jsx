@@ -11,7 +11,7 @@ const Home = () => {
   const [categoryProduct, setCategoryProduct] = useState([]);
   const categories = useLoaderData();
   const { category } = useParams();
-  const products = useContext(ProductsData);
+  const { products } = useContext(ProductsData);
   useEffect(() => {
     if (products) {
       if (category === "all-products") {
@@ -34,11 +34,14 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-[#9538E2] px-10 border-8 rounded-xl border-[rgb(247,243,243)]  mt-4 pb-52 relative">
-        <HomeNav></HomeNav>
-        <Banner></Banner>
-        <BannerImg></BannerImg>
+      <div className="border-2 rounded-3xl  border-gray-500 p-3 mt-4">
+        <div className="bg-[#9538E2] px-10  rounded-3xl   pb-52 relative">
+          <HomeNav></HomeNav>
+          <Banner></Banner>
+          <BannerImg></BannerImg>
+        </div>
       </div>
+
       <div className="mt-80">
         <h2 className="font-bold text-3xl text-center pb-10">
           Explore Cutting-Edge Gadgets
