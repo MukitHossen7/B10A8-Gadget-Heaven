@@ -1,4 +1,9 @@
+import { Outlet, useLoaderData } from "react-router-dom";
+import CategoriesBtn from "../components/CategoriesBtn/CategoriesBtn";
+
 const Home = () => {
+  const categories = useLoaderData();
+
   return (
     <div className="pt-32">
       <h2 className="font-bold text-3xl text-center pb-10">
@@ -6,8 +11,11 @@ const Home = () => {
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        <div className="w-full lg:w-[20%] h-80 border-2 border-red-200"></div>
-        <div className="w-full lg:w-[80%] grid grid-cols-3 gap-6">
+        <div className="w-full lg:w-[20%]  border-2 border-red-200">
+          <CategoriesBtn categories={categories}></CategoriesBtn>
+        </div>
+        <div className="w-full lg:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Outlet></Outlet>
           <div className="card bg-base-100  shadow-md p-5 rounded-xl">
             <figure>
               <img

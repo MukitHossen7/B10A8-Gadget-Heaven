@@ -1,0 +1,263 @@
+[
+  {
+    "product_id": "1",
+    "product_title": "Dell Inspiron 15",
+    "product_image": "https://i.ibb.co.com/Tgmrzq8/2150994379.jpg",
+    "category": "Laptops",
+    "price": 650,
+    "description": "Dell Inspiron 15 with 10th Gen Intel Core i5 processor.",
+    "Specification": [
+      "10th Gen Intel Core i5",
+      "8GB RAM",
+      "512GB SSD",
+      "15.6 inch Full HD"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "dell-inspiron-15"
+  },
+  {
+    "product_id": "2",
+    "product_title": "Apple iPhone 13",
+    "product_image": "https://i.ibb.co.com/fnjkMGq/2149404217.jpg",
+    "category": "Phones",
+    "price": 799,
+    "description": "Apple iPhone 13 with A15 Bionic chip and advanced dual-camera system.",
+    "Specification": [
+      "A15 Bionic Chip",
+      "5G Capable",
+      "Dual-camera system",
+      "6.1 inch Super Retina XDR display"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "apple-iphone-13"
+  },
+  {
+    "product_id": "3",
+    "product_title": "Samsung Galaxy Watch 4",
+    "product_image": "https://i.ibb.co.com/5rjsWj6/2151039316.jpg",
+    "category": "Smart Watches",
+    "price": 250,
+    "description": "Samsung Galaxy Watch 4 with advanced health tracking features.",
+    "Specification": [
+      "Wear OS",
+      "Heart Rate Monitor",
+      "Sleep Tracking",
+      "1.4 inch AMOLED display"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "slug": "samsung-galaxy-watch-4"
+  },
+
+  {
+    "product_id": "4",
+    "product_title": "Apple MacBook Pro 13",
+    "product_image": "https://i.ibb.co.com/5RnwYh8/2150763337.jpg",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "Apple MacBook Pro 13 with M1 chip for amazing performance and battery life.",
+    "Specification": [
+      "Apple M1 Chip",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3 inch Retina Display"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "slug": "apple-macbook-pro-13"
+  },
+  {
+    "product_id": "5",
+    "product_title": "Xiaomi Redmi Note 10",
+    "product_image": "https://i.ibb.co.com/Fz5GZGv/rb-2148380821.png",
+    "category": "Phones",
+    "price": 199,
+    "description": "Xiaomi Redmi Note 10 with a 48MP quad-camera setup and AMOLED display.",
+    "Specification": [
+      "48MP Quad Camera",
+      "AMOLED Display",
+      "5000mAh Battery",
+      "Snapdragon 678"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "slug": "xiaomi-redmi-note-10"
+  },
+
+  {
+    "product_id": "6",
+    "product_title": "Fitbit Charge 5",
+    "product_image": "https://i.ibb.co.com/p4cPwHT/13295.jpg",
+    "category": "Smart Watches",
+    "price": 150,
+    "description": "Fitbit Charge 5 with ECG app and stress management tools.",
+    "Specification": [
+      "ECG App",
+      "Heart Rate Tracking",
+      "Sleep Tracking",
+      "Water Resistant"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "fitbit-charge-5"
+  },
+
+  {
+    "product_id": "7",
+    "product_title": "Acer Aspire 5",
+    "product_image": "https://i.ibb.co.com/rbQvNYK/2147768830.jpg",
+    "category": "Laptops",
+    "price": 550,
+    "description": "Acer Aspire 5 with AMD Ryzen 5 processor and Full HD display.",
+    "Specification": [
+      "AMD Ryzen 5",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6 inch Full HD"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "slug": "acer-aspire-5"
+  },
+  {
+    "product_id": "8",
+    "product_title": "Samsung Galaxy S21",
+    "product_image": "https://i.ibb.co.com/gZWRPx1/rb-19784.png",
+    "category": "Phones",
+    "price": 699,
+    "description": "Samsung Galaxy S21 with 64MP high resolution and 8K video recording.",
+    "Specification": [
+      "64MP Camera",
+      "8K Video",
+      "5G Enabled",
+      "6.2 inch Display"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "samsung-galaxy-s21"
+  },
+  {
+    "product_id": "9",
+    "product_title": "Huawei Watch GT 3",
+    "product_image": "https://i.ibb.co.com/4PrfJCz/2151039343.jpg",
+    "category": "Smart Watches",
+    "price": 180,
+    "description": "Huawei Watch GT 3 with 14-day battery life and fitness tracking features.",
+    "Specification": [
+      "14-Day Battery",
+      "Fitness Tracking",
+      "Sleep Monitoring",
+      "Water Resistant"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "huawei-watch-gt-3"
+  },
+
+  {
+    "product_id": "10",
+    "product_title": "MacBook Air M1",
+    "product_image": "https://i.ibb.co.com/wssjyRm/2150763336.jpg",
+    "category": "MacBook",
+    "price": 999,
+    "description": "Apple MacBook Air with M1 chip for exceptional performance and battery life.",
+    "Specification": [
+      "Apple M1 Chip",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3 inch Retina Display"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "slug": "macbook-air-m1"
+  },
+  {
+    "product_id": "11",
+    "product_title": "MacBook Pro 13 M1",
+    "product_image": "https://i.ibb.co.com/KWypZh7/dlxmedia-hu-Ukp-TGYox6-RM-unsplash.jpg",
+    "category": "MacBook",
+    "price": 1299,
+    "description": "MacBook Pro 13 with M1 chip for incredible speed and power.",
+    "Specification": [
+      "Apple M1 Chip",
+      "8GB RAM",
+      "256GB SSD",
+      "13.3 inch Retina Display"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "slug": "macbook-pro-13-m1"
+  },
+  {
+    "product_id": "12",
+    "product_title": "MacBook Pro 14 M1 Pro",
+    "product_image": "https://i.ibb.co.com/JmYFWhN/images.jpg",
+    "category": "MacBook",
+    "price": 1999,
+    "description": "MacBook Pro 14 with M1 Pro chip for advanced performance and graphics.",
+    "Specification": [
+      "Apple M1 Pro Chip",
+      "16GB RAM",
+      "512GB SSD",
+      "14.2 inch Liquid Retina XDR Display"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "slug": "macbook-pro-14-m1-pro"
+  },
+
+  {
+    "product_id": "13",
+    "product_title": "HP Pavilion x360",
+    "product_image": "https://i.ibb.co.com/7WzPQYh/c08252965.png",
+    "category": "Laptops",
+    "price": 750,
+    "description": "HP Pavilion x360 with touch screen and 2-in-1 convertible design.",
+    "Specification": [
+      "Intel Core i5",
+      "8GB RAM",
+      "512GB SSD",
+      "14 inch Touchscreen"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "hp-pavilion-x360"
+  },
+
+  {
+    "product_id": "14",
+    "product_title": "HP Pavilion 14",
+    "product_image": "https://i.ibb.co.com/hHkk5CQ/c08212356.png",
+    "category": "Laptops",
+    "price": 750,
+    "description": "HP Pavilion 14 with AMD Ryzen 5 and 16GB RAM.",
+    "Specification": [
+      "AMD Ryzen 5",
+      "16GB RAM",
+      "512GB SSD",
+      "14 inch Full HD"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "hp-pavilion-14"
+  },
+  {
+    "product_id": "15",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co.com/nfg5K5j/a0a2d55f54b8bab2d8957c0a0b1f8172-hi.jpg",
+    "category": "Laptops",
+    "price": 1300,
+    "description": "Lenovo ThinkPad X1 Carbon, lightweight with powerful performance.",
+    "Specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "1TB SSD",
+      "14 inch Full HD"
+    ],
+    "availability": false,
+    "rating": 4.7,
+    "slug": "lenovo-thinkpad-x1-carbon"
+  }
+]
