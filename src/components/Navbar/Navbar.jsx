@@ -43,9 +43,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <TiShoppingCart className="text-xl" />
-
-        <CiHeart className="text-xl" />
+        <div className="p-2 border border-gray-400 rounded-full">
+          <TiShoppingCart className="text-xl " />
+        </div>
+        <div className="p-2 border border-gray-400 rounded-full">
+          <CiHeart className="text-xl" />
+        </div>
       </div>
     </div>
   );
