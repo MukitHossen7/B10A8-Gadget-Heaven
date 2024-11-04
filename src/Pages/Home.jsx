@@ -11,14 +11,19 @@ const Home = () => {
   const products = useContext(ProductsData);
   useEffect(() => {
     if (products) {
-      if (category) {
-        const filterData = products.filter(
-          (product) => product.category === category
-        );
-
-        setCategoryProduct(filterData);
+      if (category === "all-products") {
+        setCategoryProduct(products);
+        return;
       } else {
-        setCategoryProduct(products.slice(0, 9));
+        if (category) {
+          const filterData = products.filter(
+            (product) => product.category === category
+          );
+
+          setCategoryProduct(filterData);
+        } else {
+          setCategoryProduct(products.slice(0, 9));
+        }
       }
     }
   }, [products, category]);
@@ -31,7 +36,7 @@ const Home = () => {
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        <div className="w-full lg:w-[20%]  border-2 border-red-200">
+        <div className="w-full lg:w-[20%]  bg-slate-400 p-5 max-h-80">
           <CategoriesBtn categories={categories}></CategoriesBtn>
         </div>
 

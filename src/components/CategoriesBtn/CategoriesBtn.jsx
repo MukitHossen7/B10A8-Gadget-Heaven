@@ -4,6 +4,7 @@ const CategoriesBtn = ({ categories }) => {
   return (
     <div>
       <NavLink
+        to="/categories/all-products"
         className={({ isActive }) =>
           isActive
             ? "px-10 py-3 rounded-full w-full lg:w-52 mb-3 bg-[#9538E2]"
