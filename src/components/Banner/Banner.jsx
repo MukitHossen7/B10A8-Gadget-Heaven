@@ -9,7 +9,9 @@ const Banner = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <button>Shop Now</button>
+        <button className="px-7 py-3 text-[#9538E2] font-bold bg-white rounded-full">
+          Shop Now
+        </button>
       </div>
     </div>
   );

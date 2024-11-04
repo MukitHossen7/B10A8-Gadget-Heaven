@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 
 const HomeNav = () => {
   return (
-    <div className="navbar  pt-8">
+    <div className="navbar text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,10 +43,13 @@ const HomeNav = () => {
           <NavLink to="/dashboard">Dashboard</NavLink>
         </ul>
       </div>
-      <div className="navbar-end gap-5">
-        <TiShoppingCart className="text-xl" />
-
-        <CiHeart className="text-xl" />
+      <div className="navbar-end gap-4">
+        <div className="bg-white p-2 rounded-full">
+          <TiShoppingCart className="text-xl text-black" />
+        </div>
+        <div className="bg-white p-2 rounded-full">
+          <CiHeart className="text-xl text-black" />
+        </div>
       </div>
     </div>
   );
