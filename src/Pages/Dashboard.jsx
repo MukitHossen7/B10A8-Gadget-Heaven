@@ -1,6 +1,8 @@
+import Navbar from "./../components/Navbar/Navbar";
 const Dashboard = () => {
   return (
     <div>
+      <Navbar></Navbar>
       <h1>Dashboard</h1>
       <p>Welcome to your dashboard.</p>
       <p>This is where you can manage your gadgets and monitor your usage.</p>
