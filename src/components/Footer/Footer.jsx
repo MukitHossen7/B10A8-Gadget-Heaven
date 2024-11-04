@@ -7,22 +7,22 @@ const Footer = () => {
           Leading the way in cutting-edge technology and innovation.
         </p>
       </div>
-      <div className="divider"></div>
-      <footer className="footer flex flex-col lg:flex-row justify-center text-center items-center gap-8 lg:gap-40  ">
-        <div className="text-center flex flex-col items-center">
+      <div className="divider w-11/12 mx-auto"></div>
+      <footer className="footer w-11/12 auto flex flex-col lg:flex-row justify-around  items-center gap-8 ">
+        <div className=" flex flex-col">
           <h6 className="text-lg font-bold">Services</h6>
           <a className="link link-hover">Product Support</a>
           <a className="link link-hover">Order Tracking</a>
           <a className="link link-hover">Shipping & Delivery</a>
           <a className="link link-hover">Returns</a>
         </div>
-        <div className="text-center flex flex-col items-center">
+        <div className="flex flex-col ">
           <h6 className="text-lg font-bold">Company</h6>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Careers</a>
           <a className="link link-hover">Contact</a>
         </div>
-        <div className="text-center flex flex-col items-center">
+        <div className="flex flex-col ">
           <h6 className="text-lg font-bold">Legal</h6>
 
           <a className="link link-hover">Terms of Service</a>

@@ -12,14 +12,16 @@ const MainLayouts = () => {
   }, []);
   console.log(products);
   return (
-    <div className="w-11/12 md:w-11/12 lg:11/12 xl:container mx-auto">
+    <div className="">
       <ProductsData.Provider value={{ products }}>
-        <div className="min-h-[calc(100vh-336px)] ">
+        <div className="min-h-[calc(100vh-336px)] w-11/12 md:w-11/12 lg:11/12 xl:container mx-auto ">
           <Outlet></Outlet>
         </div>
       </ProductsData.Provider>
 
-      <Footer></Footer>
+      <div className="bg-gray-100">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

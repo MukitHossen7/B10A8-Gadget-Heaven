@@ -34,12 +34,12 @@ const ProductDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="bg-[#9538E2] rounded-xl pb-56 pt-4 mt-6 mb-80">
+      <div className="bg-[#9538E2] rounded-xl pb-56 pt-4 mt-6 mb-96">
         <Heading
           title="Product Details"
           description="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
         ></Heading>
-        <div className="rounded-2xl absolute left-0 right-0 mx-60 top-60   bg-white shadow-xl ">
+        <div className="rounded-2xl absolute left-0 right-0 mx-60 top-60  bg-white shadow-xl ">
           <div className="p-6 flex flex-row gap-6 ">
             <div className="w-[40%] ">
               <img
