@@ -1,8 +1,21 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import CategoriesBtn from "../components/CategoriesBtn/CategoriesBtn";
+import { useContext, useEffect, useState } from "react";
+import { ProductsData } from "../Layouts/MainLayouts";
+import Card from "../components/Card/Card";
 
 const Home = () => {
+  const [categoryProduct, setCategoryProduct] = useState([]);
   const categories = useLoaderData();
+  const { category } = useParams();
+  const products = useContext(ProductsData);
+  useEffect(() => {
+    const filterData = products
+      ? products.filter((product) => product.category === category)
+      : [];
+    setCategoryProduct(filterData);
+  }, [products, category]);
+  console.log(categoryProduct);
 
   return (
     <div className="pt-32">
@@ -14,68 +27,11 @@ const Home = () => {
         <div className="w-full lg:w-[20%]  border-2 border-red-200">
           <CategoriesBtn categories={categories}></CategoriesBtn>
         </div>
+
         <div className="w-full lg:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Outlet></Outlet>
-          <div className="card bg-base-100  shadow-md p-5 rounded-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="pt-6">
-              <h2 className="font-semibold text-2xl pb-3">Dell XPS 13</h2>
-              <p className="font-medium text-xl text-gray-600">
-                Price : 99.99 k
-              </p>
-              <div className="card-actions justify-start pt-4">
-                <button className="font-semibold text-[#9538E2] border-2 border-[#9538E2] px-5 py-3 rounded-full">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="card bg-base-100  shadow-md p-5 rounded-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="pt-6">
-              <h2 className="font-semibold text-2xl pb-3">Dell XPS 13</h2>
-              <p className="font-medium text-xl text-gray-600">
-                Price : 99.99 k
-              </p>
-              <div className="card-actions justify-start pt-4">
-                <button className="font-semibold text-[#9538E2] border-2 border-[#9538E2] px-5 py-3 rounded-full">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="card bg-base-100  shadow-md p-5 rounded-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="pt-6">
-              <h2 className="font-semibold text-2xl pb-3">Dell XPS 13</h2>
-              <p className="font-medium text-xl text-gray-600">
-                Price : 99.99 k
-              </p>
-              <div className="card-actions justify-start pt-4">
-                <button className="font-semibold text-[#9538E2] border-2 border-[#9538E2] px-5 py-3 rounded-full">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
+          {categoryProduct.map((product) => (
+            <Card key={product.product_id} product={product}></Card>
+          ))}
         </div>
       </div>
     </div>

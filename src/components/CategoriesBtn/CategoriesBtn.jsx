@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 const CategoriesBtn = ({ categories }) => {
   return (
@@ -27,7 +27,4 @@ const CategoriesBtn = ({ categories }) => {
   );
 };
 
-CategoriesBtn.propTypes = {
-  categories: PropTypes.object,
-};
 export default CategoriesBtn;
