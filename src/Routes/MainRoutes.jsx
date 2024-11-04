@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import ProductCard from "../components/ProductCard/ProductCard";
+import ProductDetails from "../components/ProductDetails/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/details/:productId",
+        element: <ProductDetails></ProductDetails>,
       },
     ],
   },

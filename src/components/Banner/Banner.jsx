@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="pt-12">
+    <div className="pt-12 ">
       <div className="flex flex-col items-center justify-center text-center w-full mx-auto lg:w-[1000px]">
         <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl text-white">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories

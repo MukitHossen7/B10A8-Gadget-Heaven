@@ -37,7 +37,6 @@ const Home = () => {
       <div className="bg-[#9538E2] px-10 border-8 rounded-xl border-[rgb(247,243,243)]  mt-4 pb-52 relative">
         <HomeNav></HomeNav>
         <Banner></Banner>
-
         <BannerImg></BannerImg>
       </div>
       <div className="mt-80">
