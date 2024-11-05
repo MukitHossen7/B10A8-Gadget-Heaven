@@ -12,6 +12,8 @@ const ProductDetails = () => {
   const [details, setDetails] = useState({});
   const { productId } = useParams();
   const { products: allProductsData } = useContext(ProductsData);
+  const { handleAddCard } = useContext(ProductsData);
+  const { handleAddWishlist } = useContext(ProductsData);
   useEffect(() => {
     if (Array.isArray(allProductsData)) {
       const findData = allProductsData.find(
@@ -30,7 +32,6 @@ const ProductDetails = () => {
     Specification,
     rating,
   } = details;
-  console.log(Specification);
   return (
     <div>
       <Navbar></Navbar>
@@ -82,11 +83,14 @@ const ProductDetails = () => {
                 <span className="bg-gray-300 p-2 rounded-full">{rating}</span>
               </div>
               <div className="flex items-center gap-8">
-                <button className="flex items-center gap-2 bg-[#9538E2] text-white px-5 py-2 rounded-full ">
+                <button
+                  onClick={() => handleAddCard(details)}
+                  className="flex items-center gap-2 bg-[#9538E2] text-white px-5 py-2 rounded-full "
+                >
                   {" "}
                   Add to Card <FaShoppingCart />
                 </button>
-                <button>
+                <button onClick={() => handleAddWishlist(details)}>
                   <CiHeart className="text-3xl border-2 border-gray-400 rounded-full p-1" />
                 </button>
               </div>
