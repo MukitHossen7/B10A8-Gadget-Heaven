@@ -40,8 +40,7 @@ const Dashboard = () => {
   const handleNavigateHome = () => {
     navigate("/");
   };
-  console.log(totalMoney);
-  console.log(totalCost);
+
   return (
     <div>
       <Navbar></Navbar>
