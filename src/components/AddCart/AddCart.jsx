@@ -3,7 +3,7 @@ import { TiDelete } from "react-icons/ti";
 import { ProductsData } from "../../Layouts/MainLayouts";
 const AddCart = () => {
   const { addCard } = useContext(ProductsData);
-  console.log(addCard);
+
   return (
     <div className="">
       {addCard.map((cardValue, idx) => (

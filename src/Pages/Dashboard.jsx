@@ -9,7 +9,8 @@ import { ProductsData } from "../Layouts/MainLayouts";
 const Dashboard = () => {
   const [isCart, setIsCart] = useState(true);
   const [isSortPrice, setIsSortPrice] = useState([]);
-  const { addCard } = useContext(ProductsData);
+  const { addCard, setAddCard } = useContext(ProductsData);
+
   const totalCost = addCard.reduce((acc, cur) => {
     return parseInt(acc + cur.price);
   }, 0);
@@ -25,7 +26,9 @@ const Dashboard = () => {
   };
   const handlePrice = () => {
     isSortPrice;
+    setAddCard([]);
   };
+
   return (
     <div>
       <Navbar></Navbar>

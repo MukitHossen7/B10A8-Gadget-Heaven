@@ -1,4 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
+  const navigate = useNavigate();
+  const handleShowDashboard = () => {
+    navigate("/dashboard");
+  };
   return (
     <div className="pt-12 ">
       <div className="flex flex-col items-center justify-center text-center w-full mx-auto lg:w-[1000px]">
@@ -9,7 +15,10 @@ const Banner = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <button className="px-7 py-3 text-[#9538E2] font-bold bg-white rounded-full">
+        <button
+          onClick={handleShowDashboard}
+          className="px-7 py-3 text-[#9538E2] font-bold bg-white rounded-full"
+        >
           Shop Now
         </button>
       </div>
