@@ -1,11 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Heading from "../components/Heading/Heading";
 import Navbar from "../components/Navbar/Navbar";
 import { ProductsData } from "../Layouts/MainLayouts";
 
 const History = () => {
   const { history } = useContext(ProductsData);
-
+  useEffect(() => {
+    document.title = "History Page";
+  }, []);
   return (
     <div>
       <Navbar></Navbar>

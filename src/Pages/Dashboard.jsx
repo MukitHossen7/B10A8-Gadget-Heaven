@@ -19,6 +19,7 @@ const Dashboard = () => {
   }, 0);
   useEffect(() => {
     setDisable(totalCost);
+    document.title = "Dashboard Page";
   }, []);
   const handleCart = () => {
     setIsCart(true);

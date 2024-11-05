@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import Heading from "../components/Heading/Heading";
 import Navbar from "../components/Navbar/Navbar";
 
 const Statistics = () => {
+  useEffect(() => {
+    document.title = "Statistics Page";
+  }, []);
   return (
     <div>
       <Navbar></Navbar>
