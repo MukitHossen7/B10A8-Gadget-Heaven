@@ -43,7 +43,7 @@ const MainLayouts = () => {
           setAddCard,
         }}
       >
-        <div className="min-h-[calc(100vh-336px)] w-11/12 md:w-11/12 lg:11/12 xl:container mx-auto ">
+        <div className="min-h-[calc(100vh-458px)] w-11/12 md:w-11/12 lg:11/12 xl:container mx-auto ">
           <Outlet></Outlet>
         </div>
       </ProductsData.Provider>

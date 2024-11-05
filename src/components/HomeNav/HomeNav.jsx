@@ -29,9 +29,16 @@ const HomeNav = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3  text-gray-100"
           >
-            <NavLink to="/">Home</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "underline text-white font-bold" : ""
+              }
+            >
+              Home
+            </NavLink>
             <NavLink to="/statistics">Statistics</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
           </ul>
@@ -41,8 +48,15 @@ const HomeNav = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal gap-11 px-1 ">
-          <NavLink to="/">Home</NavLink>
+        <ul className="menu menu-horizontal gap-11 px-1 text-gray-100 ">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "underline text-white font-bold" : ""
+            }
+          >
+            Home
+          </NavLink>
           <NavLink to="/statistics">Statistics</NavLink>
           <NavLink to="/dashboard">Dashboard</NavLink>
         </ul>

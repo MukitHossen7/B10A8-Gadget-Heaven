@@ -6,10 +6,13 @@ import Dashboard from "../Pages/Dashboard";
 import ProductCard from "../components/ProductCard/ProductCard";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
 
+import ErrorPage from "../components/ErrorPage/ErrorPage";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayouts></MainLayouts>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

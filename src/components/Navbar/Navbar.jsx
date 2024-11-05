@@ -43,8 +43,22 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-11 px-1 ">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/statistics">Statistics</NavLink>
-          <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink
+            to="/statistics"
+            className={({ isActive }) =>
+              isActive ? "underline text-black font-bold" : ""
+            }
+          >
+            Statistics
+          </NavLink>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive ? "underline text-black font-bold" : ""
+            }
+          >
+            Dashboard
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-5">
