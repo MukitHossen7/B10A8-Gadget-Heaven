@@ -10,7 +10,7 @@ const AddWishlist = () => {
       {addWishlist.map((wishValue, idx) => (
         <div
           key={idx}
-          className="flex gap-8 flex-row items-center p-8 bg-gray-100 rounded-xl justify-between"
+          className="flex mb-4 gap-8 flex-row items-center p-8 bg-gray-100 rounded-xl justify-between"
         >
           <div className="flex gap-5">
             <div className="w-36 h-32 rounded-xl">
