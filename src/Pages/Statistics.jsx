@@ -8,7 +8,7 @@ const Statistics = () => {
       <div className="bg-[#9538E2] mt-8 py-7 rounded-xl">
         <Heading
           title="Statistics"
-          description="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+          description="Gadget Heaven offers in-depth statistics on the latest gadgets, analyzing user ratings, market trends, and device performance. Discover insights to guide your tech purchases confidently"
         ></Heading>
       </div>
       <h1 className="font-bold text-5xl text-[#9538E2] text-center pt-10">

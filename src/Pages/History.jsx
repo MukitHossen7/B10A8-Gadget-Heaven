@@ -13,7 +13,7 @@ const History = () => {
       <div className="bg-[#9538E2] py-8 rounded-xl mt-8">
         <Heading
           title="History"
-          description="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+          description="Gadget Heaven’s purchase history feature allows users to track their orders, view transaction details, and manage past purchases effortlessly."
         ></Heading>
       </div>
       <div className="flex justify-between items-center pt-8">

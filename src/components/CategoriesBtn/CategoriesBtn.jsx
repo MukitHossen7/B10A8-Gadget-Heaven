@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
 const CategoriesBtn = ({ categories }) => {
+  const location = useLocation();
+  const isAllProductsActive =
+    location.pathname === "/" ||
+    location.pathname === "/categories/all-products";
+
   return (
     <div className="flex flex-col gap-7">
       <div className="pt-3">
         <NavLink
           to="/categories/all-products"
-          className={({ isActive }) =>
-            isActive
+          className={() =>
+            isAllProductsActive
               ? " btn  rounded-full w-full  bg-[#9538E2] text-white"
               : "  btn bg-slate-100  w-full rounded-full  "
           }

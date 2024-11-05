@@ -48,7 +48,7 @@ const Dashboard = () => {
       <div className="bg-[#9538E2] rounded-xl mt-8 pt-7 ">
         <Heading
           title="Dashboard"
-          description="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
+          description="The Gadget Heaven dashboard provides a detailed overview of all gadgets, highlighting trending products, recent additions, and tailored recommendations. Effortlessly browse categories, manage stock, and track user activity for streamlined operations"
         ></Heading>
         <div className="flex flex-row justify-center gap-6 py-5">
           <button
