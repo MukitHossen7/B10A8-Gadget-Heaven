@@ -41,6 +41,7 @@ const HomeNav = () => {
             </NavLink>
             <NavLink to="/statistics">Statistics</NavLink>
             <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink to="/history">History</NavLink>
           </ul>
         </div>
         <Link to="/" className="text-xl font-bold ">
@@ -59,6 +60,7 @@ const HomeNav = () => {
           </NavLink>
           <NavLink to="/statistics">Statistics</NavLink>
           <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink to="/history">History</NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-4">

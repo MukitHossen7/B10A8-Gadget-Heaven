@@ -7,6 +7,7 @@ import ProductCard from "../components/ProductCard/ProductCard";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
 
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import History from "../Pages/History";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/history",
+        element: <History></History>,
       },
       {
         path: "/details/:productId",

@@ -32,8 +32,30 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3"
           >
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/statistics">Statistics</NavLink>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink
+              to="/statistics"
+              className={({ isActive }) =>
+                isActive ? "underline text-black font-bold" : ""
+              }
+            >
+              Statistics
+            </NavLink>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive ? "underline text-black font-bold" : ""
+              }
+            >
+              Dashboard
+            </NavLink>
+            <NavLink
+              to="/history"
+              className={({ isActive }) =>
+                isActive ? "underline text-black font-bold" : ""
+              }
+            >
+              History
+            </NavLink>
           </ul>
         </div>
         <Link to="/" className="text-xl font-bold ">
@@ -58,6 +80,14 @@ const Navbar = () => {
             }
           >
             Dashboard
+          </NavLink>
+          <NavLink
+            to="/history"
+            className={({ isActive }) =>
+              isActive ? "underline text-black font-bold" : ""
+            }
+          >
+            History
           </NavLink>
         </ul>
       </div>
