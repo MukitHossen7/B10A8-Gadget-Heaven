@@ -13,7 +13,9 @@ const MainLayouts = () => {
     toast.success("Successfully Add to Cart!");
   };
   const handleAddWishlist = (wishObj) => {
-    const findWish = addWishlist.find((item) => item.id === wishObj.id);
+    const findWish = addWishlist.find(
+      (item) => item.product_id === wishObj.product_id
+    );
     if (findWish) {
       toast.error("Already Added to Wishlist!");
       return;

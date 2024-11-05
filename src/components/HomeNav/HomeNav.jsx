@@ -1,8 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import { TiShoppingCart } from "react-icons/ti";
 import { CiHeart } from "react-icons/ci";
+import { useContext } from "react";
+import { ProductsData } from "../../Layouts/MainLayouts";
 
 const HomeNav = () => {
+  const { addCard } = useContext(ProductsData);
+  const { addWishlist } = useContext(ProductsData);
   return (
     <div className="navbar text-white">
       <div className="navbar-start">
@@ -44,11 +48,17 @@ const HomeNav = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4">
-        <div className="bg-white p-2 rounded-full">
+        <div className="bg-white p-3 rounded-full relative">
           <TiShoppingCart className="text-xl text-black" />
+          <span className="bg-[#9538E2] border border-white px-2  rounded-full absolute -top-3 -right-1">
+            <span className="text-sm">{addCard.length}</span>
+          </span>
         </div>
-        <div className="bg-white p-2 rounded-full">
+        <div className="bg-white p-3 rounded-full relative">
           <CiHeart className="text-xl text-black" />
+          <span className="bg-[#9538E2] border border-white px-2  rounded-full absolute -top-3 -right-1">
+            <span className="text-sm">{addWishlist.length}</span>
+          </span>
         </div>
       </div>
     </div>

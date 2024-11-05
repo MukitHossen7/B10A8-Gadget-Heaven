@@ -10,10 +10,15 @@ import Navbar from "../Navbar/Navbar";
 
 const ProductDetails = () => {
   const [details, setDetails] = useState({});
+  const [isDisabled, setIsDisabled] = useState(false);
   const { productId } = useParams();
   const { products: allProductsData } = useContext(ProductsData);
   const { handleAddCard } = useContext(ProductsData);
   const { handleAddWishlist } = useContext(ProductsData);
+  const handleWishlistBtn = (data) => {
+    handleAddWishlist(data);
+    setIsDisabled(true);
+  };
   useEffect(() => {
     if (Array.isArray(allProductsData)) {
       const findData = allProductsData.find(
@@ -90,7 +95,11 @@ const ProductDetails = () => {
                   {" "}
                   Add to Card <FaShoppingCart />
                 </button>
-                <button onClick={() => handleAddWishlist(details)}>
+                <button
+                  disabled={isDisabled}
+                  onClick={() => handleWishlistBtn(details)}
+                  className={`${isDisabled ? "bg-gray-300 rounded-full " : ""}`}
+                >
                   <CiHeart className="text-3xl border-2 border-gray-400 rounded-full p-1" />
                 </button>
               </div>
