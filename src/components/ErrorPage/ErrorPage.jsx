@@ -1,7 +1,11 @@
-import { useRouteError } from "react-router-dom";
+import { useNavigate, useRouteError } from "react-router-dom";
 
 const ErrorPage = () => {
   const error = useRouteError();
+  const navigate = useNavigate();
+  const handleGoHome = () => {
+    navigate("/");
+  };
   return (
     <div className="flex flex-col items-center justify-center text-center h-screen">
       <h1 className="font-bold text-7xl text-[#9538E2] pb-5">Oops!!</h1>
@@ -21,6 +25,12 @@ const ErrorPage = () => {
           </div>
         )}
       </div>
+      <button
+        onClick={handleGoHome}
+        className="bg-[#9538E2] btn text-white hover:bg-[#9538E2] mt-4"
+      >
+        Go Back Home
+      </button>
     </div>
   );
 };
