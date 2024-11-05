@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AddCart from "../components/AddCart/AddCart";
 import AddWishlist from "../components/AddWishlist/AddWishlist";
 import Heading from "../components/Heading/Heading";
@@ -10,11 +10,16 @@ import { useNavigate } from "react-router-dom";
 const Dashboard = () => {
   const [isCart, setIsCart] = useState(true);
   const [isSortPrice, setIsSortPrice] = useState([]);
-  const { addCard, setAddCard } = useContext(ProductsData);
+  const [totalMoney, setTotalMoney] = useState(0);
+  const [disable, setDisable] = useState(0);
+  const { addCard, setAddCard, setHistory } = useContext(ProductsData);
   const navigate = useNavigate();
   const totalCost = addCard.reduce((acc, cur) => {
     return parseInt(acc + cur.price);
   }, 0);
+  useEffect(() => {
+    setDisable(totalCost);
+  }, []);
   const handleCart = () => {
     setIsCart(true);
   };
@@ -28,11 +33,15 @@ const Dashboard = () => {
   const handlePrice = () => {
     isSortPrice;
     setAddCard([]);
+    setHistory((prev) => [...prev, ...addCard]);
+    setTotalMoney(totalCost);
     document.getElementById("my_modal_1").showModal();
   };
   const handleNavigateHome = () => {
     navigate("/");
   };
+  console.log(totalMoney);
+  console.log(totalCost);
   return (
     <div>
       <Navbar></Navbar>
@@ -68,13 +77,21 @@ const Dashboard = () => {
           <h3 className="font-bold text-xl">Total cost: ${totalCost}</h3>
           <button
             onClick={handleSortPrice}
-            className="border-2 text-[#9538E2] border-[#9538E2] px-10 py-2 bg-gray-100 rounded-full flex items-center gap-2"
+            disabled={disable === 0 ? true : false}
+            className={` text-[#9538E2]  px-10 py-2 bg-gray-100 rounded-full flex items-center gap-2 ${
+              disable === 0
+                ? "bg-gray-300 text-slate-700"
+                : "border-2 border-[#9538E2]"
+            }`}
           >
             Sort by Price <HiAdjustmentsVertical />
           </button>
           <button
             onClick={handlePrice}
-            className="border-2  bg-[#9538E2] px-10 py-2 rounded-full text-white"
+            disabled={disable === 0 ? true : false}
+            className={`border-2  bg-[#9538E2] px-10 py-2 rounded-full text-white ${
+              disable === 0 ? "bg-gray-300 text-slate-700" : ""
+            }`}
           >
             Purchase
           </button>
@@ -88,7 +105,7 @@ const Dashboard = () => {
           <img src={modalImg}></img>
           <h3 className="font-bold text-3xl mt-3">Payment Successfully</h3>
           <p className="pt-5 font-bold">Thanks for purchasing.</p>
-          <p className="font-bold">{`Total cost: ${totalCost}.00`}</p>
+          <p className="font-bold">{`Total cost: ${totalMoney}.00`}</p>
           <div className="modal-action w-full">
             <form method="dialog" className="w-full">
               <button onClick={handleNavigateHome} className="btn w-full">

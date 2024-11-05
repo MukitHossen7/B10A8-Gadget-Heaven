@@ -10,14 +10,14 @@ const Card = ({ product }) => {
   return (
     <div>
       <div className="card bg-base-100 shadow-lg p-6 rounded-xl">
-        <figure className="rounded-xl">
+        <div className="rounded-xl h-full">
           <img
             src={product_image}
             alt="product"
-            className="h-60 w-full object-cover rounded-xl pb-6"
+            className="h-60 w-full object-cover rounded-xl "
           />
-        </figure>
-        <div className="">
+        </div>
+        <div className="mt-6">
           <h2 className="font-semibold text-xl pb-3">{product_title}</h2>
           <p className="font-medium text-gray-500">Price : ${price}</p>
           <div className="mt-4">

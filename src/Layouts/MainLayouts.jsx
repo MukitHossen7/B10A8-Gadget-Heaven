@@ -8,6 +8,8 @@ const MainLayouts = () => {
   const [products, setProducts] = useState();
   const [addCard, setAddCard] = useState([]);
   const [addWishlist, SetAddWishlist] = useState([]);
+  const [history, setHistory] = useState([]);
+
   const handleAddCard = (cardObj) => {
     setAddCard([...addCard, cardObj]);
     toast.success("Successfully Add to Cart!");
@@ -41,6 +43,8 @@ const MainLayouts = () => {
           addCard,
           addWishlist,
           setAddCard,
+          history,
+          setHistory,
         }}
       >
         <div className="min-h-[calc(100vh-458px)] w-11/12 md:w-11/12 lg:11/12 xl:container mx-auto ">

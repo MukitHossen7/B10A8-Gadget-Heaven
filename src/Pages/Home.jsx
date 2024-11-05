@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="border-2 rounded-3xl  border-gray-500 p-3 mt-4">
+      <div className="border-2 rounded-3xl  border-gray-500 p-2 mt-4">
         <div className="bg-[#9538E2]  px-7  rounded-3xl   pb-52 relative">
           <HomeNav></HomeNav>
           <Banner></Banner>
