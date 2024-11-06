@@ -58,7 +58,7 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <Link to="/" className="text-xl font-bold ">
+        <Link to="/" className="text-lg lg:text-xl font-bold ">
           Gadget Heaven
         </Link>
       </div>
@@ -92,13 +92,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <div className="p-3 rounded-full relative border border-gray-300">
+        <div className="p-2 lg:p-3 rounded-full relative border border-gray-300">
           <TiShoppingCart className="text-xl text-black" />
           <span className="bg-[#9538E2] text-white border border-white px-2  rounded-full absolute -top-3 -right-1">
             <span className="text-sm">{addCard.length}</span>
           </span>
         </div>
-        <div className=" p-3 rounded-full relative border border-gray-300">
+        <div className=" p-2 lg:p-3 rounded-full relative border border-gray-300">
           <CiHeart className="text-xl text-black" />
           <span className="bg-[#9538E2] text-white border border-white px-2  rounded-full absolute -top-3 -right-1">
             <span className="text-sm">{addWishlist.length}</span>

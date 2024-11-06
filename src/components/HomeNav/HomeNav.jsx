@@ -29,7 +29,7 @@ const HomeNav = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3  text-gray-100"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3 text-gray-500 "
           >
             <NavLink
               to="/"
@@ -44,7 +44,7 @@ const HomeNav = () => {
             <NavLink to="/history">History</NavLink>
           </ul>
         </div>
-        <Link to="/" className="text-xl font-bold ">
+        <Link to="/" className="text-lg lg:text-xl font-bold ">
           Gadget Heaven
         </Link>
       </div>

@@ -40,23 +40,27 @@ const ProductDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="bg-[#9538E2] rounded-xl pb-56 pt-4 mt-6 mb-96">
+      <div className="bg-[#9538E2] rounded-xl pb-56 pt-4 mt-6 mb-[600px] lg:mb-96">
         <Heading
           title="Product Details"
           description="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
         ></Heading>
-        <div className="rounded-2xl absolute left-0 right-0 mx-60 top-60  bg-white shadow-xl ">
-          <div className="p-6 flex flex-row gap-6 ">
-            <div className="w-[40%] ">
+        <div className="rounded-2xl absolute left-0 right-0 mx-14 lg:mx-60 top-72 lg:top-60  bg-white shadow-xl ">
+          <div className="p-6 flex flex-col lg:flex-row gap-6 ">
+            <div className=" w-full lg:w-[40%] ">
               <img
                 src={product_image}
                 alt="imag"
-                className="rounded-xl h-[450px] object-cover w-full"
+                className="rounded-xl h-40 lg:h-[450px] object-cover w-full"
               />
             </div>
-            <div className="w-[60%] space-y-3">
-              <h3 className="font-medium text-3xl">{product_title}</h3>
-              <h4 className="font-medium text-xl">Price:$ {price}</h4>
+            <div className="w-full lg:w-[60%] space-y-3">
+              <h3 className="font-medium text-xl lg:text-3xl">
+                {product_title}
+              </h3>
+              <h4 className="font-medium text-base lg:text-xl">
+                Price:$ {price}
+              </h4>
               <button
                 className={`px-3 py-1 border-2 rounded-full text-sm ${
                   availability
@@ -90,7 +94,7 @@ const ProductDetails = () => {
               <div className="flex items-center gap-8">
                 <button
                   onClick={() => handleAddCard(details)}
-                  className="flex items-center gap-2 bg-[#9538E2] text-white px-5 py-2 rounded-full "
+                  className="flex items-center gap-2 bg-[#9538E2] text-white text-sm lg:text-base px-5 py-2 rounded-full "
                 >
                   {" "}
                   Add to Card <FaShoppingCart />

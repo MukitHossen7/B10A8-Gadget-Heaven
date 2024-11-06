@@ -36,15 +36,15 @@ const Home = () => {
   return (
     <div>
       <div className="border-2 rounded-3xl  border-gray-500 p-2 mt-4">
-        <div className="bg-[#9538E2]  px-7  rounded-3xl   pb-52 relative">
+        <div className="bg-[#9538E2] px-0 lg:px-7  rounded-3xl   pb-52 relative">
           <HomeNav></HomeNav>
           <Banner></Banner>
           <BannerImg></BannerImg>
         </div>
       </div>
 
-      <div className="mt-80">
-        <h2 className="font-bold text-3xl text-center pb-10">
+      <div className="mt-20 lg:mt-80">
+        <h2 className="font-bold text-2xl lg:text-3xl text-center pb-10">
           Explore Cutting-Edge Gadgets
         </h2>
 

@@ -15,7 +15,7 @@ const Statistics = () => {
           description="Gadget Heaven offers in-depth statistics on the latest gadgets, analyzing user ratings, market trends, and device performance. Discover insights to guide your tech purchases confidently"
         ></Heading>
       </div>
-      <h1 className="font-bold text-5xl text-[#9538E2] text-center pt-10">
+      <h1 className="font-bold text-3xl lg:text-5xl text-[#9538E2] text-center pt-10">
         No Data To Show Statistics
       </h1>
     </div>
