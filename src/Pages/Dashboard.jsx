@@ -72,7 +72,7 @@ const Dashboard = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-between py-10">
-        <h2 className="font-bold text-2xl">Cart</h2>
+        <h2 className="font-bold text-2xl">{isCart ? "Cart" : "Wishlist"}</h2>
 
         <div className="flex flex-col lg:flex-row items-center gap-3">
           <h3 className="font-bold text-xl">Total cost: ${totalCost}</h3>
