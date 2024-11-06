@@ -31,7 +31,6 @@ const Home = () => {
     }
     document.title = "Home Page";
   }, [products, category]);
-  console.log(categoryProduct);
 
   return (
     <div>

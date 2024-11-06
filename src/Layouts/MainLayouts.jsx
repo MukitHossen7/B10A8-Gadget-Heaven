@@ -31,8 +31,7 @@ const MainLayouts = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  // console.log(addCard);
-  // console.log(addWishlist);
+
   return (
     <div className="">
       <ProductsData.Provider

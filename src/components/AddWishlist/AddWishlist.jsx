@@ -4,7 +4,6 @@ import { ProductsData } from "../../Layouts/MainLayouts";
 
 const AddWishlist = () => {
   const { addWishlist } = useContext(ProductsData);
-  console.log(addWishlist);
   return (
     <div>
       {addWishlist.map((wishValue, idx) => (
